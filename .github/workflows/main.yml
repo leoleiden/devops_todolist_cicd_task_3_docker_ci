@@ -76,7 +76,7 @@ jobs:
       - name: Build and Push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: .
-          file: ./src/Dockerfile
+          context: ./src
+          file: ./Dockerfile
           push: true
           tags: leoleiden/devops_cicd_repo:${{ github.sha }}
