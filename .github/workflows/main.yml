@@ -77,5 +77,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
+          file: ./Dockerfile
           push: true
           tags: leoleiden/devops_cicd_repo:${{ github.sha }}
